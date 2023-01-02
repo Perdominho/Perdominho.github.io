@@ -1,2 +1,7 @@
 /* Universal Styles */
 
+
+* {
+    color:red;
+    text-align:left;
+}
