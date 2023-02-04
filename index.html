@@ -12,6 +12,18 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="/jquery-3.6.3.min.js"></script>
+    <script src="/jquery.i18n.js"></script>
+        <script>
+            // Cargar archivo de traducción en inglés por defecto
+            $.i18n().load({
+              'en': 'en.json'
+            }).done(function() {
+              // Aplicar traducciones a la página
+              $("[data-i18n]").i18n();
+            });
+          </script>
+
 </head>
 
 <body>
@@ -25,7 +37,7 @@
         </div>
         <ul id="menu" class="shadow">
             <li>
-                <a href="#about">Sobre mí</a>
+                <a href="#about" >Sobre mí</a>
             </li>
             <li>
                 <a href="#experience">Experiencia</a>
@@ -69,7 +81,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2 class="heading">Sobre mí</h2>
+                    <h2 data-i18n="Sobremi" class="heading">Sobre mí</h2>
                 </div>
                 <div class="col-md-8">
                     <p>
