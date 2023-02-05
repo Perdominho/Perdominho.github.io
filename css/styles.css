@@ -430,3 +430,43 @@ header.sticky{position:fixed;
     {#lead-content h1{font-size:1.5em}
     #lead-content h2{font-size:1em}
     #lead-content a{font-size:0.9em;padding:5px 10px}}
+.Navigation {
+    padding: 20px;
+}
+.en {
+    color:#333;
+}
+.es {
+    color:#00a1ff;
+}
+.check{
+    position:relative;
+    width: 50px;
+}
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #333
+}
+.check:checked:before{
+    background: #00a1ff;
+}
+
